@@ -1,4 +1,4 @@
-# D&D Companion App
+﻿# D&D Companion App
 
 A desktop application built with C# and WPF to help manage character sheets for Dungeons & Dragons 5th Edition. This app allows players and dungeon masters to create, view, and manage characters using a local MongoDB database.
 
@@ -36,7 +36,7 @@ A desktop application built with C# and WPF to help manage character sheets for 
 ## Prerequisites
 
 - **Windows OS**: This application is built for Windows platforms.
-- **.NET 6.0 SDK**: [Download here](https://dotnet.microsoft.com/download/dotnet/6.0)
+- **.NET 6.0 SDK**: [Download here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - **Visual Studio 2022**: Community Edition or higher.
 - **MongoDB Community Server**: [Download here](https://www.mongodb.com/try/download/community)
 - **MongoDB Compass** (Optional): For database visualization. [Download here](https://www.mongodb.com/try/download/compass)
