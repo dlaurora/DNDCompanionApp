@@ -1,0 +1,70 @@
+﻿<Window x:Class="DNDCompanionApp.Views.CreateCharacterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Crear Personaje" Height="700" Width="800">
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Margin="10">
+                <!-- Detalles del Personaje -->
+                <TextBlock Text="Nombre del Personaje" />
+                <TextBox Name="CharacterNameTextBox" />
+
+                <TextBlock Text="Nombre del Jugador" />
+                <TextBox Name="PlayerNameTextBox" />
+
+                <TextBlock Text="Clase" />
+                <TextBox Name="ClassTextBox" />
+
+                <TextBlock Text="Raza" />
+                <TextBox Name="RaceTextBox" />
+
+                <TextBlock Text="Nivel" />
+                <TextBox Name="LevelTextBox" />
+
+                <!-- Atributos -->
+                <TextBlock Text="Atributos" FontWeight="Bold" Margin="0,10,0,0"/>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Fuerza" />
+                        <TextBox Name="StrengthTextBox" Width="50" />
+                    </StackPanel>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Destreza" />
+                        <TextBox Name="DexterityTextBox" Width="50" />
+                    </StackPanel>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Constitución" />
+                        <TextBox Name="ConstitutionTextBox" Width="50" />
+                    </StackPanel>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Inteligencia" />
+                        <TextBox Name="IntelligenceTextBox" Width="50" />
+                    </StackPanel>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Sabiduría" />
+                        <TextBox Name="WisdomTextBox" Width="50" />
+                    </StackPanel>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="Carisma" />
+                        <TextBox Name="CharismaTextBox" Width="50" />
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Habilidades -->
+                <TextBlock Text="Habilidades (separadas por comas)" Margin="0,10,0,0"/>
+                <TextBox Name="SkillsTextBox" />
+
+                <!-- Equipo -->
+                <TextBlock Text="Equipo (separado por comas)" />
+                <TextBox Name="EquipmentTextBox" />
+
+                <!-- Historia -->
+                <TextBlock Text="Historia" Margin="0,10,0,0"/>
+                <TextBox Name="BackstoryTextBox" Height="100" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+                <!-- Botón de Crear -->
+                <Button Content="Crear Personaje" Click="CreateCharacterButton_Click" Margin="0,10,0,0" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

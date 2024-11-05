@@ -1,0 +1,63 @@
+﻿<Window x:Class="DNDCompanionApp.Views.CharacterDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Detalles del Personaje" Height="600" Width="400">
+    <ScrollViewer>
+        <StackPanel Margin="10">
+            <!-- Nombre del Personaje -->
+            <TextBlock Text="Nombre del Personaje" FontWeight="Bold"/>
+            <TextBlock Text="{Binding CharacterName}" Margin="0,0,0,10"/>
+
+            <!-- Nombre del Jugador -->
+            <TextBlock Text="Nombre del Jugador" FontWeight="Bold"/>
+            <TextBlock Text="{Binding PlayerName}" Margin="0,0,0,10"/>
+
+            <!-- Clase -->
+            <TextBlock Text="Clase" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Class}" Margin="0,0,0,10"/>
+
+            <!-- Raza -->
+            <TextBlock Text="Raza" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Race}" Margin="0,0,0,10"/>
+
+            <!-- Nivel -->
+            <TextBlock Text="Nivel" FontWeight="Bold"/>
+            <TextBlock Text="{Binding Level}" Margin="0,0,0,10"/>
+
+            <!-- Atributos -->
+            <TextBlock Text="Atributos" FontWeight="Bold" Margin="0,10,0,0"/>
+            <StackPanel>
+                <TextBlock Text="Fuerza: {Binding Attributes.Strength}" />
+                <TextBlock Text="Destreza: {Binding Attributes.Dexterity}" />
+                <TextBlock Text="Constitución: {Binding Attributes.Constitution}" />
+                <TextBlock Text="Inteligencia: {Binding Attributes.Intelligence}" />
+                <TextBlock Text="Sabiduría: {Binding Attributes.Wisdom}" />
+                <TextBlock Text="Carisma: {Binding Attributes.Charisma}" />
+            </StackPanel>
+
+            <!-- Habilidades -->
+            <TextBlock Text="Habilidades" FontWeight="Bold" Margin="0,10,0,0"/>
+            <ItemsControl ItemsSource="{Binding Skills}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="- {Binding}" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <!-- Equipo -->
+            <TextBlock Text="Equipo" FontWeight="Bold" Margin="0,10,0,0"/>
+            <ItemsControl ItemsSource="{Binding Equipment}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="- {Binding}" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <!-- Historia -->
+            <TextBlock Text="Historia" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="{Binding Backstory}" TextWrapping="Wrap"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
