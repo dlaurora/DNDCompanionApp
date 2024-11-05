@@ -25,12 +25,15 @@ A desktop application built with C# and WPF to help manage character sheets for 
 ## Screenshots
 
 ![Main Window](screenshots/main_window.png)
+
 *Main window displaying the list of characters.*
 
 ![Create Character](screenshots/create_character.png)
+
 *Window for creating a new character.*
 
 ![Character Details](screenshots/character_details.png)
+
 *Detailed view of a character's information.*
 
 ## Prerequisites
